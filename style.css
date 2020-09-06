@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Russo One';
+}
+
+@font-face {
+  font-family: Russo One;
+  src: url(./font/Russo_One.ttf);
+  font-weight: regular;
+}
+
+.home-hero {
+  background: #142a5b;
+  height: 100%;
+}
+
+.gGeppt {
+  display: grid;
+  grid-template-rows: 15vw 10vw 10vw 10vw 5vw;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.gGeppt span:first-child {
+  background: #553b9a;
+}
+
+.gGeppt span:nth-child(2) {
+  background: #5d71ff;
+  grid-row: span 2 / span 2;
+  grid-row-start: 4;
+  grid-column: span 2 / span 2;
+  grid-column-start: span 2;
+  grid-column-start: 6;
+  transform: skewY(-5deg);
+}
+
+.gGeppt span:nth-child(3) {
+  background: #5d71ff;
+  grid-column: span 2 / span 2;
+  grid-column-start: span 2;
+  grid-column-start: 6;
+  transform: skewY(-5deg);
+}
+
+.gGeppt span:nth-child(4) {
+  background: #553b9a;
+  grid-row-start: 3;
+  grid-column-start: 5;
+}
+
+.gGeppt span:nth-child(5) {
+  background: #5d71ff;
+  grid-row: span 2 / span 2;
+  grid-row-start: span 2;
+  grid-row-start: 4;
+}
