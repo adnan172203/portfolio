@@ -20,10 +20,15 @@ h6 {
   font-weight: regular;
 }
 
+/* ========= Hero Section */
+
 .home-hero {
   background: #142a5b;
   height: 100%;
+  position: relative;
 }
+
+/* === Hero Section - shape === */
 
 .gGeppt {
   display: grid;
@@ -65,4 +70,34 @@ h6 {
   grid-row: span 2 / span 2;
   grid-row-start: span 2;
   grid-row-start: 4;
+}
+
+/* ======= Hero Section - Heading =========== */
+
+.home-title {
+  position: absolute;
+  top: 29%;
+  width: 100%;
+  text-align: center;
+}
+
+.home-title .hello {
+  position: absolute;
+  top: 3%;
+  transform: skewY(-5deg);
+  color: #bee3f8;
+}
+
+.home-title .adnan {
+  font-size: 17vw;
+  text-shadow: rgb(10, 134, 254) 5px 5px 0px;
+  color: #fff;
+}
+
+.fullstack {
+  transform: skewY(-5deg);
+  position: absolute;
+  top: 84%;
+  color: #bee3f8;
+  left: 71%;
 }
