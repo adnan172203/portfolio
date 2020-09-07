@@ -103,3 +103,70 @@ h6 {
   color: #bee3f8;
   left: 71%;
 }
+
+/* ================================== Main Content =============================== */
+.main-content {
+  background: #061d4e;
+  overflow: hidden;
+}
+
+.browser-mockup {
+  border-top: 2.5rem solid #343434;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 6px 6px 0 0;
+  width: 30%;
+  height: 20vw;
+}
+
+.browser-mockup::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.browser-mockup:after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.8em;
+  left: 5.5em;
+  width: calc(100% - 10em);
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: #747474;
+}
+
+.browser-mockup img {
+  max-width: 100%;
+}
+
+.project-one {
+  display: flex;
+  justify-content: center;
+  position: relaive;
+}
+
+.project-image {
+  position: relative;
+  z-index: 2;
+}
+
+.project-image::before {
+  width: 90%;
+  transform: skewY(-5deg);
+  background: #5d71ff;
+  position: absolute;
+  left: 20%;
+  z-index: -1;
+  height: 104%;
+  top: 10%;
+  content: '';
+}
