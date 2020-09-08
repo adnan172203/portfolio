@@ -146,12 +146,15 @@ h6 {
 
 .browser-mockup img {
   max-width: 100%;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
 }
 
-.project-one {
+.project-one, .project-two, .project-three {
   display: flex;
-  justify-content: center;
-  position: relaive;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-bottom: 9rem;
 }
 
 .project-image {
@@ -161,12 +164,37 @@ h6 {
 
 .project-image::before {
   width: 90%;
-  transform: skewY(-5deg);
+  transform: skewY(-3deg);
   background: #5d71ff;
   position: absolute;
-  left: 20%;
+  left: 15%;
   z-index: -1;
   height: 104%;
-  top: 10%;
+  top: 7%;
   content: '';
+}
+
+.project-description {
+  margin-left: -17%;
+}
+
+.project-image-two{
+  position:absolute;
+  z-index: 2;
+}
+
+.project-image-two::before {
+  width: 90%;
+  transform: skewY(3deg);
+  background: #553B9A;
+  position: absolute;
+  left: 17%;
+  z-index: -1;
+  height: 104%;
+  top: 4%;
+  content: '';
+}
+
+.project-description-two {
+  margin-right: -20%;
 }
